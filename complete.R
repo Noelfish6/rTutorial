@@ -87,4 +87,5 @@ accidentsByDate <- summarize(group, FATALS = n())
 
 ggplot(accidentsByDate, aes(DATE, FATALS)) +
   geom_point(color = 'firebrick') +
-  labs(x = "Date", y = "Number of fatalities")
+  labs(x = "Date", y = "Number of fatalities") +
+  geom_smooth()
